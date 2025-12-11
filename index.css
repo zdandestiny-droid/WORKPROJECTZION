@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    padding: 1.5rem 2%;
+    position: absolute;
+    z-index: 1000;
+}
+.logo h1{
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    font-family: 'Fraunces',serif;
+} 
+.nav-links{
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 50px;
+    list-style: none;
+}
+.menu-icon, #menu-toggle, .mobile-menu{
+    display: none;
+}
+.menu-icon{
+    font-size: 3rem;
+    color: white;
+}
+.icon{
+    font-size: 9rem;
+    font-weight: 100;
+    margin-top: 40px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: azure;
+    font-size: 1.1rem;
+    position: relative;
+    font-weight: 500;
+    padding: 15px 18px;
+    border-radius: 50px;
+    font-family: 'Barlow', sans-serif;
+}
+.nav-links a:hover,
+.nav-links a:focus {
+    background-color: hsl(200, 100%, 72%);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;  
+}
+.head{
+    min-height: 120vh;
+    background: url(image-header\ \(2\).jpg) center/cover;    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.head h1{
+    margin-top: 200px;
+    letter-spacing: 5px;
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: 'Fraunces',serif;
+}
+.about, .service{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 90vh;
+}
+.about-text{
+    padding: 20% 7rem;
+}
+.service-text{
+    padding: 20% 5rem;
+}
+.about-text h1, .service-text h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    margin-bottom: 20px;
+}
+.about-text p, .service-text p{
+    font-size: 1.2rem;
+    color: hsl(213, 9%, 39%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.learn-more, .learn-more2{
+    text-decoration: none;
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    font-size: 1.4rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    z-index: 1;
+    text-transform: uppercase;
+    position: relative;
+}
+.learn-more::after, .learn-more2::after{
+    content: '';
+    position: absolute;
+    left: -4%;
+    bottom: -2px;
+    width: 180px;
+    border-radius: 10px;
+    height: 8px;
+    z-index: -1;
+    opacity: 0.35;
+    transition: 0.3s ease;
+}
+.learn-more::after{
+    background-color: hsl(51, 100%, 49%);
+}
+.learn-more2::after{
+    background-color: hsl(7, 99%, 70%);
+}
+.learn-more:hover::after, .learn-more2:hover::after{
+    opacity: 1;
+}
+
+.img{
+    background-image: url(image-transform\ \(3\).jpg);
+    background-position: center;
+    background-size: cover;  
+}
+.img2 {
+    background-image: url(image-stand-out\ \(3\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+  
+.project{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 90vh;
+}
+.project1{
+    background-image: url(image-graphic-design.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+.project-text{
+    margin-top: 55%;
+    text-align: center;
+    padding: 3% 10rem;
+}
+.project2{
+    background-image: url(image-photography.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.project-text h1{
+    color:  hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+.project-text p{
+    margin-top: 20px;
+    font-size: 1rem;
+    color: hsl(213, 9%, 39%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+.galleries{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 50vh;
+    
+}
+.img1{
+    background-image: url(image-gallery-milkbottles\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img3{
+    background-image: url(image-gallery-orange\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img4{
+    background-image: url(image-gallery-cone.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img5{
+    background-image: url(image-gallery-sugarcubes.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.client{
+    padding: 6rem 9%;
+    min-height: 100vh;
+}
+.read{
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: 700;
+    color: hsl(232, 10%, 55%);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.grid-box{
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 5rem;
+}
+.grid-card img{
+    align-items: center;
+    margin-bottom: 100px;
+    width: 70px;
+    display: block;
+    margin: 0 auto 60px;
+    border-radius: 50px;
+}
+.text{
+    text-align: center;
+    margin-top: 30px;
+}
+.text h1{
+    font-size: 1.3rem;
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+.text p{
+    font-size: 1rem;
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    opacity: 0.7;
+
+}
+.jet{
+    text-align: center;
+     font-size: 1.1rem;
+    color: hsl(213, 9%, 39%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+
+}
+footer{
+    padding: 2rem 5%;
+    text-align: center;
+    background-color: hsl(168, 34%, 65%);
+   
+}  
+footer h1{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: hsl(167, 40%, 24%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    font-size: 2.3rem;
+}
+footer ul{
+    list-style: none;
+   
+}
+footer li a{
+    text-decoration: none;
+     color: hsl(167, 40%, 24%);
+    font-family: 'Barlow', sans-serif;
+
+}
+.links, .socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.links{
+    font-size: 1.2rem;
+    font-weight: 600;
+    gap: 3rem;
+}
+.socials{
+    font-size: 1.5rem;
+    font-weight: 500;
+    gap: 1.5rem;
+    margin-top: 80px;
+}
+.links a:hover, .socials a:hover{
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+   body{
+    box-sizing: border-box;
+   }
+  .nav-bar {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 0.9rem 4%;
+   
+  }
+  
+  .icon{
+    margin-bottom: 70px;
+  }
+  .menu-icon{
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-toggle-input:checked ~ .mobile-menu {
+    display: flex;
+  }
+ .mobile-menu {
+  position: absolute;
+  top: 90px;
+  right: 30px;
+  width: 85%;
+  padding: 40px 20px;
+  background: #fff7f0;
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  gap: 25px;
+  }
+  #menu-toggle{
+    position: absolute;
+    left: -9999px;
+  }
+  
+
+ .mobile-menu a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #808397;
+  }
+ .triangle {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-bottom: 20px solid #fff7f0;
+ }
+
+  .logo h1 { 
+    font-size: 1.6rem; 
+  }  
+  .nav-links a { 
+    display: none;
+    }
+  .head { 
+    min-height: 70vh; 
+    background-position: center; 
+    background-image: url(image-header.jpg);
+    }
+  .head h1 { 
+    font-size: 3rem; 
+    margin-top: 120px; 
+    letter-spacing: 3px; 
+   }
+   .transform{
+    min-height: 50vh;
+    background-image: url(image-transform.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .stand-out{
+    background-image: url(image-stand-out\ \(3\).jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    
+  }
+    .about, .service{
+    display: flex;
+    text-align: center;
+    min-height: 60vh;
+   }
+   .about-text h1, .service-text h1{
+    font-size: 2.6rem;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+   }
+  .about-text, .service-text { 
+    padding: 4rem;
+  }
+  .project{
+    display: flex;
+    flex-direction: column;  
+  }
+  .project1{
+    background-image: url(image-graphic-design\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+  }
+  .project2{
+    background-image: url(image-photography\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+  }
+  .project-text { 
+    margin-top: 95%; 
+    padding: 3% 1.6rem; 
+  }
+  .galleries { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .grid-box { 
+    grid-template-columns: 1fr; 
+    gap: 2rem; 
+  }
+  .client { 
+    padding: 3.5rem 6%; 
+  }
+  .img1{
+    background-image: url(image-gallery-milkbottles.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .img3{
+    background-image: url(image-gallery-orange.jpg);
+     background-position: center;
+    background-size: cover;
+  }
+  .img4{
+    background-image: url(image-gallery-cone\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+    
+  }
+  footer{
+    min-height: 40vh;
+  }
+   footer h1 { 
+    font-size: 1.6rem; 
+    margin-bottom: 24px; 
+  }
+  .socials{
+    margin-bottom: 30px;
+  }
+}
