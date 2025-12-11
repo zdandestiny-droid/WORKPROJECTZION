@@ -65,7 +65,7 @@ body{
 }
 .head{
     min-height: 120vh;
-    background: url(image-header\ \(2\).jpg) center/cover;    
+    background: url(image-header.jpg) center/cover;    
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -137,12 +137,12 @@ body{
 }
 
 .img{
-    background-image: url(image-transform\ \(3\).jpg);
+    background-image: url(mobile-transform.jpg);
     background-position: center;
     background-size: cover;  
 }
 .img2 {
-    background-image: url(image-stand-out\ \(3\).jpg);
+    background-image: url(mobile-stand-out.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -189,12 +189,12 @@ body{
     
 }
 .img1{
-    background-image: url(image-gallery-milkbottles\ \(2\).jpg);
+    background-image: url(mobile-gallery-milkbottle.jpg);
     background-size: cover;
     background-position: center;
 }
 .img3{
-    background-image: url(image-gallery-orange\ \(2\).jpg);
+    background-image: url(mobile-gallery-orange.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -387,7 +387,7 @@ footer li a{
     background-position: center;
   }
   .stand-out{
-    background-image: url(image-stand-out\ \(3\).jpg);
+    background-image: url(image-stand-out.jpg);
     background-size: cover;
     background-position: center;
     min-height: 50vh;
@@ -412,13 +412,13 @@ footer li a{
     flex-direction: column;  
   }
   .project1{
-    background-image: url(image-graphic-design\ \(2\).jpg);
+    background-image: url(mobile-graphic-design.jpg);
     background-size: cover;
     background-position: center;
     min-height: 70vh;
   }
   .project2{
-    background-image: url(image-photography\ \(2\).jpg);
+    background-image: url(mobile-photography.jpg);
     background-size: cover;
     background-position: center;
     min-height: 70vh;
@@ -448,7 +448,7 @@ footer li a{
     background-size: cover;
   }
   .img4{
-    background-image: url(image-gallery-cone\ \(2\).jpg);
+    background-image: url(mobile-gallery-cone.jpg);
     background-position: center;
     background-size: cover;
     
