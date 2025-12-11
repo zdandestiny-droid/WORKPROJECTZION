@@ -65,7 +65,7 @@ body{
 }
 .head{
     min-height: 120vh;
-    background: url(image-header.jpg) center/cover;    
+    background: url(header.jpg) center/cover;    
     display: flex;
     flex-direction: column;
     text-align: center;
