@@ -37,9 +37,37 @@ body{
     display: none;
 }
 .menu-icon{
-    font-size: 3rem;
-    color: white;
+    width: 35px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 5px;
 }
+.menu-icon span{
+    font-size: 3rem;
+    background: white;
+    display: block;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    transition: 0.4s ease;
+}
+.menu-toggle-input:checked + .menu-icon span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+.menu-toggle-input:checked + .menu-icon span:nth-child(2){
+    opacity: 0;
+}
+.menu-toggle-input:checked + .menu-icon span:nth-child(3){
+    transform: translateY(-9px)
+    rotate(-45deg);
+}
+.menu-toggle-input:checked ~ .mobile-menu {
+    display: flex;
+  }
+
 .icon{
     font-size: 9rem;
     font-weight: 100;
@@ -317,19 +345,9 @@ footer li a{
     left: 0;
     top: 0;
     padding: 0.9rem 4%;
-   
   }
-  
   .icon{
     margin-bottom: 70px;
-  }
-  .menu-icon{
-    display: block;
-    cursor: pointer;
-  }
-
-  .menu-toggle-input:checked ~ .mobile-menu {
-    display: flex;
   }
  .mobile-menu {
   position: absolute;
@@ -348,7 +366,9 @@ footer li a{
     left: -9999px;
   }
   
-
+ .menu-icon{
+    display: block;
+ }
  .mobile-menu a {
     text-decoration: none;
     font-size: 18px;
